@@ -3,14 +3,33 @@
 // write two different implementations with the same behavior
 //  hint: demorgan
 
-const notAndA = (x, y) => {
-  return _;
-};
+function notAndA(x, y) {
+  if (typeof x !== 'boolean') { throw new TypeError(); }
+  if (typeof y !== 'boolean') { throw new TypeError(); }
+
+  const result = !x && !y;
+
+  if (typeof result !== 'boolean') { throw new TypeError(); }
+  return result;
+}
+
+/**
+ * returns true if neither argument is true, false if either are true
+ * @param {boolean} x
+ * @param {boolean} y
+ * @returns {boolean}
+ */
+function notAndB(x, y) {
+  if (typeof x !== 'boolean') { throw new TypeError(); }
+  if (typeof y !== 'boolean') { throw new TypeError(); }
+
+  const result = !(x || y);
+
+  if (typeof result !== 'boolean') { throw new TypeError(); }
+  return result;
+}
 
 
-const notAndB = (x, y) => {
-  return _;
-};
 
 
 const _1_arg1 = false;
