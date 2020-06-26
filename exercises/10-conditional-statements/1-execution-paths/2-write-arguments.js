@@ -1,14 +1,20 @@
-const mystery = (a, b) => {
+function mystery(a, b) {
   let result = '';
-  if (typeof a === b) {
-    result = 'path 1';
-  } else if (a === typeof b) {
-    result = 'path 2';
+  if (typeof a === 'number') {
+    if (typeof b === 'number') {
+      result = 'path 1';
+    } else {
+      result = 'path 2';
+    }
   } else {
-    result = 'path 3';
+    if (typeof a === typeof b) {
+      result = 'path 3';
+    } else {
+      result = 'path 4';
+    }
   }
   return result;
-};
+}
 
 // path 1
 const _1_expect = 'path 1';

@@ -1,4 +1,4 @@
-const mystery = (a, b) => {
+function mystery(a, b) {
   let result = '';
   if (a && b) {
     result = 'path 1';
@@ -8,7 +8,7 @@ const mystery = (a, b) => {
     result = 'path 3';
   }
   return result;
-};
+}
 
 
 const _1_expect = _;
