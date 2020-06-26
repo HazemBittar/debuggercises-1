@@ -17,7 +17,7 @@ const value1 = false;
 const truthiness1 = classify(value1);
 console.log(truthiness1, typeof value1, value1);
 
-const value2 = '';
+const value2 = true;
 const truthiness2 = classify(value2);
 console.log(truthiness2, typeof value2, value2);
 

@@ -2,9 +2,13 @@
 
 // write a function that behaves the same as !
 //  ... but doesn't use !, only using ? :
-const not = (value) => {
-  return _ ? _ : _;
-};
+function not(value) {
+  if(Boolean(value) === true){
+      return false
+  }else{
+      return true;
+  }
+}
 
 const _1_expect = true;
 const _1_actual = not(0);

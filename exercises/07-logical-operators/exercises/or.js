@@ -2,9 +2,13 @@
 
 // write a function that behaves the same as ||
 //  ... without using ||, only using ? :
-const or = (left, right) => {
-  return _ ? _ : _;
-};
+function or(left, right) {
+  if(Boolean(left) === true){
+      return left
+  }else{
+      return right;
+  }
+}
 
 const _1_expect = 0;
 const _1_actual = or(0, 0);

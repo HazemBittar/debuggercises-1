@@ -2,9 +2,13 @@
 
 // write a function that behaves the same as &&
 //  ... without using &&, only using ? :
-const and = (left, right) => {
-  return _ ? _ : _;
-};
+function and(left, right) {
+  if(Boolean(left) === false){
+      return left
+  }else{
+      return right;
+  }
+}
 
 const _1_expect = 0;
 const _1_actual = and(0, 0);
